@@ -1,13 +1,12 @@
 <?php
 
 namespace Database\Seeders;
-use Database\Factories\DistrictFactory;
 
-use Illuminate\Database\Seeder;
-use Database\Seeders\DistrictSeeder;
-use Database\Seeders\GuardianSeeder;
+
 use App\Models\District;
+use App\Models\DistrictGuardian;
 use App\Models\Guardian;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,5 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         District::factory(15)->create();
         Guardian::factory(100)->create();
+        DistrictGuardian::factory(10)->create();
+        // Option::factory(12)->create();
     }
 }

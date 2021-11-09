@@ -1,53 +1,6 @@
-<!DOCTYPE html>
-<!--
-Template Name: Chillaid
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
--->
-<html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
-<head>
-    <title>Chillaid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+@extends('layout')
 
-    <link href="{{asset('css/layout.css')}}" rel="stylesheet" type="text/css" media="all">
-    <link href="{{asset('css/framework.css')}}" rel="stylesheet" type="text/css" media="all">
-</head>
-<body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row1">
-    <header id="header" class="hoc clear">
-        <div id="logo" class="fl_left">
-            <!-- ################################################################################################ -->
-            <h1 class="logoname"><a href="index.html">Chill<span>a</span>id</a></h1>
-            <!-- ################################################################################################ -->
-        </div>
-        <nav id="mainav" class="fl_right">
-            <!-- ################################################################################################ -->
-            <ul class="clear">
-                <li class="active"><a href="{{route('home')}}">Strona domowa</a></li>
-
-
-
-                <li><a href="{{route('search')}}">Wyszukiwarka</a></li>
-                <li><a href="{{route('version')}}">Wersja Aktualizacji</a></li>
-{{--               <li><a href="{{route('login')}}">Logowanie</a></li>--}}
-{{--                <li><a href="{{route('register')}}">Rejestracja</a></li>--}}
-            </ul>
-            <!-- ################################################################################################ -->
-        </nav>
-    </header>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
+@section('content')
 <div class="bgded overlay" style="background-image: url('{{ asset('images/backgrounds/slider.jpeg')}}');">
     <div id="pageintro" class="hoc clear">
         <!-- ################################################################################################ -->
@@ -97,10 +50,13 @@ Licence URI: https://www.os-templates.com/template-terms
         </section>
         <!-- ################################################################################################ -->
         <section class="group shout"><h1 class="heading">Opiekunki Tygodnia</h1>
+
             @foreach($guards as $guard)
-            <figure class="one_half first"><img src="{{asset('images/')}}/{{$guard->src}}" alt="">
-                <figcaption class="heading"><a href="#">{{$guard->name}}</a></figcaption>
-            </figure>
+
+                <figure class=" one_third "><img style="height:200px;width:400px"
+                                                 src="{{asset('images/')}}/{{$guard->src}}" alt="">
+                    <figcaption class="heading"><a href="#">{{$guard->name}}</a></figcaption>
+                </figure>
             @endforeach
         </section>
         <!-- ################################################################################################ -->
@@ -255,11 +211,13 @@ Licence URI: https://www.os-templates.com/template-terms
         <ul class="nospace group team">
             <li class="one_third ">            @foreach($latest_guardians as $latest_guardian)
 
-                <figure><a class="imgover" href="#"><img src="{{asset('images/')}}/{{$latest_guardian->src}}" alt=""></a>
-                   <strong>{{$latest_guardian->name}}</strong> </figcaption>
-                </figure>
+                    <figure><a class="imgover" href="#"><img style="height:400px;width:400px"
+                                                             src="{{asset('images/')}}/{{$latest_guardian->src}}"
+                                                             alt=""></a>
+                        <strong>{{$latest_guardian->name}}</strong> </figcaption>
+                    </figure>
             </li>
-                @endforeach
+            @endforeach
 
         </ul>
         <!-- ################################################################################################ -->
@@ -380,83 +338,5 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="bgded overlay row4" style="background-image:url("{{asset('images/backgrounds/slider.jpeg')}}">
-    <footer id="footer" class="hoc clear">
-        <!-- ################################################################################################ -->
-        <div class="one_quarter first">
+@endsection
 
-            <h1 class="logoname"><a href="index.html">Chill<span>a</span>id</a></h1>
-            <p>Scelerisque facilisis sapien turpis facilisis libero eu viverra purus dui ac leo sed vitae diam morbi sed nibh in eget dolor phasellus rhoncus odio morbi elit nunc id elit donec elementum [<a href="#">&hellip;</a>]</p>
-            <ul class="faico clear">
-                <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-            </ul>
-        </div>
-        <div class="one_quarter">
-            <h6 class="heading">Volutpat metus nullam</h6>
-            <ul class="nospace linklist">
-                <li><a href="#">Sagittis leo morbi quis</a></li>
-                <li><a href="#">Nulla vehicula felis laoreet</a></li>
-                <li><a href="#">Pulvinar proin et eros ac</a></li>
-                <li><a href="#">Mi vulputate accumsan fusce</a></li>
-                <li><a href="#">At massa in sed tortor sit amet</a></li>
-            </ul>
-        </div>
-        <div class="one_quarter">
-            <h6 class="heading">Tincidunt ullamcorper</h6>
-            <ul class="nospace clear latestimg">
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-                <li><a class="imgover" href="#"><img src="{{asset('images/100x100.png')}}" alt=""></a></li>
-
-            </ul>
-        </div>
-        <div class="one_quarter">
-            <h6 class="heading">Fusce vel lectus nunc</h6>
-            <ul class="nospace linklist">
-                <li>
-                    <article>
-                        <p class="nospace btmspace-10"><a href="#">Lacinia donec tortor lectus varius vel egestas a dictum in odio mauris metus.</a></p>
-                        <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <p class="nospace btmspace-10"><a href="#">Turpis iaculis ac hendrerit vel pretium non magna sed non metus ut at nisi morbi.</a></p>
-                        <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-                    </article>
-                </li>
-            </ul>
-        </div>
-        <!-- ################################################################################################ -->
-    </footer>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row5">
-    <div id="copyright" class="hoc clear">
-        <!-- ################################################################################################ -->
-        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-        <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-        <!-- ################################################################################################ -->
-    </div>
-</div>
-
-<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/jquery.backtotop.js')}}"></script>
-<script src="{{asset('js/jquery.mobilemenu.js')}}"></script>
-<script src="{{asset('js/jquery.easypiechart.min.js')}}"></script>
-
-</body>
-</html>

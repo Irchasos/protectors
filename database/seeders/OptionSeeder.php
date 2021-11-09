@@ -1,11 +1,12 @@
 <?php
 
 namespace Database\Seeders;
+
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class DistrictSeeder extends Seeder
+class OptionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,8 +17,8 @@ class DistrictSeeder extends Seeder
     {
         $faker = Factory::create();
 
-        DB::table("districts")->insert([
-            "name" => $faker->name(),
+        DB::table("options")->insert([
+            "name" => 'zło', 'bbb',
 
         ]);
     }

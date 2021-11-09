@@ -52,7 +52,7 @@
 <br>
 <br>
 <br>
-<table class="table" >Wersja 1.0
+<table class="table">Wersja 1.1
     <thead>
     <tr>
         <th>Status</th>
@@ -64,28 +64,30 @@
 
     <tr class="table-primary">
         <td>Primary</td>
-        <td>Joe</td>
-        <td>joe@example.com</td>
+        <td>Widok listy opiekunek</td>
+        <td>Dołączono widok/css brak problemow</td>
     </tr>
     <tr class="table-success">
-        <td>Success</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td>Zakończono</td>
+        <td>Front sie rozjezdza, checkboxy w wyszukiwarce i zdjecia na stronie glownej</td>
+        <td>Poprawiono layout</td>
     </tr>
-    <tr class="table-danger">
-        <td>Danger</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+    <tr class="table-warning">
+        <td>do zrobienia</td>
+        <td>Layout,Auth</td>
+        <td>Ogarnąc stopke, wyrzucic nie potrzebne elementy z layoutu,dodac logowanie i rejestracje, ostylowac
+            checkboxy
+        </td>
     </tr>
-    <tr class="table-info">
-        <td>Info</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+    <tr class="table-success">
+        <td>ZAkończono</td>
+        <td>Baza danych</td>
+        <td>Dodano pivot table dla dzielnic i opiekunek poprawne seedowanie</td>
     </tr>
     <tr class="table-warning">
         <td>Warning</td>
-        <td>Refs</td>
-        <td>bo@example.com</td>
+        <td>Baza danych</td>
+        <td>seedowanie dzielnicami</td>
     </tr>
 
     </tbody>
@@ -93,8 +95,14 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

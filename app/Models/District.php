@@ -1,16 +1,17 @@
 <?php
 
 namespace App\Models;
-use App\Models\Guardian;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Database\Factories\DistrictFactory;
-class District extends Model
-{   use HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-//    final public function guardians(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
-//    {
-//        return $this->BelongsToMany(Guardian::class);
-//    }
+class District extends Model
+{
+    use HasFactory;
+
+    final public function guardians(): BelongsToMany
+    {
+        return $this->BelongsToMany(Guardian::class, 'district_guardian', 'district_id', 'guardian_id');
+    }
 
 }

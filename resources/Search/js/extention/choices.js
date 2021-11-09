@@ -1,6 +1,6 @@
 
 
-/*! choices.js v3.0.4 | (c) 2018 Josh Johnson | https://github.com/jshjohnson/Choices#readme */ 
+/*! choices.js v3.0.4 | (c) 2018 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -510,7 +510,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (sortedChoices[i]) {
 	          appendChoice(sortedChoices[i]);
 	        }
-	      };
+          }
 
 	      return choicesFragment;
 	    }
@@ -4716,7 +4716,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 
 		return result;
-	};
+    }
 
 /***/ }),
 /* 21 */
@@ -6203,5 +6203,5 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ })
 /******/ ])
 });
-;
+
 //# sourceMappingURL=choices.js.map

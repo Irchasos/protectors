@@ -1,23 +1,16 @@
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="author" content="colorlib.com">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Poppins:700" rel="stylesheet"/>
-    <link href="{{asset('Search/css/main.css')}}" rel="stylesheet" type="text/css" media="all">
-</head>
-<body>
-<div class="s011">
-    <form>
-        <fieldset>
-            <legend>Wyszukiwarka opiekunów</legend>
-        </fieldset>
-        <div class="inner-form">
+@extends('layout')
 
-            <div class="main-form" id="main-form">
-                <div class="row">
-                    <div class="input-wrap">
+@section('content')
+    <div class="s011">
+        <form>
+            <fieldset>
+                <legend>Wyszukiwarka opiekunów</legend>
+            </fieldset>
+            <div class="inner-form">
+
+                <div class="main-form" id="main-form">
+                    <div class="row">
+                        <div class="input-wrap">
 
                         <div class="input-field">
                             <label>Wyszukaj po nazwie</label>
@@ -70,82 +63,61 @@
                         </div>
                     </div>
                 </div>
-                <div class="row third">
-                    <div class="input-checkbox-group">
-                        <div class="input-checkbox">
-                            <input id="yes" type="checkbox" name="dogs" value="yes" checked="checked"/>
-                            <label for="dogs">Opieka Nad Zwierzętami
-                            </label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Opieka Nad Większą Ilością Osób</label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Wsparcie W Nauce
-                            </label>
+                    <div class="row third">
+                        <div class="input-checkbox-group">
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label for="inlineCheckbox1">Opieka Nad Zwierzętami</label>
+
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label for="inlineCheckbox2">Opieka Nad Większą Ilością Osób</label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label for="inlineCheckbox3">Wsparcie W Nauce
+                                </label>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-                <div class="row fourth">
-                    <div class="input-checkbox-group">
-                        <div class="input-checkbox">
-                            <input id="yes" type="checkbox" name="customer" value="yes" checked="checked"/>
-                            <label for="yes">Organizowanie Zabawy</label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Cena Za Godzinę Stała Przez Całą Dobę
-                            </label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Kucharz</label>
-                        </div>
+                    <div class="row fourth">
+                        <div class="input-checkbox-group">
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label for="inlineCheckbox4">Organizowanie Zabawy</label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label for="inlineCheckbox5">Cena Za Godzinę Stała Przez Całą Dobę
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="inlineCheckbox6" value="option6">
+                                <label for="inlineCheckbox6">Kucharz</label>
+                            </div>
 
 
-                    </div>
-
-                </div>
-                <div class="row third">
-                    <div class="input-checkbox-group">
-                        <div class="input-checkbox">
-                            <input id="yes" type="checkbox" name="dogs" value="yes" checked="checked"/>
-                            <label for="dogs">Wychowawca kolonijny
-                            </label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Wieloletnie Doświadczeni
-                            </label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input id="no" type="checkbox" name="customer" value="no"/>
-                            <label for="no">Opieka Nad Niepełnosprawnymi
-
-                            </label>
                         </div>
 
                     </div>
                     <div class="row third">
                         <div class="input-checkbox-group">
                             <div class="input-checkbox">
-                                <input id="yes" type="checkbox" name="dogs" value="yes" checked="checked"/>
-                                <label for="dogs">Opieka W Nocy
-
+                                <input type="checkbox" id="inlineCheckbox7" value="option7">
+                                <label for="inlineCheckbox7">Wychowawca kolonijny
                                 </label>
                             </div>
                             <div class="input-checkbox">
-                                <input id="no" type="checkbox" name="customer" value="no"/>
-                                <label for="no" >Wsparcie psychologiczne
+                                <input type="checkbox" id="inlineCheckbox8" value="option8">
+                                <label for="inlineCheckbox8">Wieloletnie Doświadczeni
                                 </label>
                             </div>
                             <div class="input-checkbox">
-                                <input id="no" type="checkbox" name="customer" value="no"/>
-                                <label for="no">Opiekunka
+                                <input type="checkbox" id="inlineCheckbox9" value="option9">
+                                <label for="inlineCheckbox9">Opieka Nad Niepełnosprawnymi
 
                                 </label>
                             </div>
@@ -154,58 +126,51 @@
                         <div class="row third">
                             <div class="input-checkbox-group">
                                 <div class="input-checkbox">
-                                    <input id="yes" type="checkbox" name="dogs" value="yes" checked="checked"/>
-                                    <label for="dogs">Trudna Młodzież
+                                    <input type="checkbox" id="inlineCheckbox10" value="option10">
+                                    <label for="inlineCheckbox10">Opieka W Nocy
+
                                     </label>
                                 </div>
                                 <div class="input-checkbox">
-                                    <input id="no" type="checkbox" name="customer" value="no"/>
-                                    <label for="no">Praca w języku angielskim
+                                    <input type="checkbox" id="inlineCheckbox11" value="option11">
+                                    <label for="inlineCheckbox11">Wsparcie psychologiczne
                                     </label>
                                 </div>
                                 <div class="input-checkbox">
-                                    <input id="no" type="checkbox" name="customer" value="no"/>
-                                    <label for="no">Opiekun
+                                    <input type="checkbox" id="inlineCheckbox12" value="option12">
+                                    <label for="inlineCheckbox12">Opiekunka
 
                                     </label>
                                 </div>
 
                             </div>
-                <div class="row third">
-                    <button class="btn-search" type="button">Search</button>
-                </div>
-            </div>
-        </div>
+                            <div class="row third">
+                                <div class="input-checkbox-group">
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" id="inlineCheckbox13" value="option13">
+                                        <label for="inlineCheckbox13">Trudna Młodzież
+                                        </label>
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" id="inlineCheckbox14" value="option14">
+                                        <label for="inlineCheckbox14">Praca w języku angielskim
+                                        </label>
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" id="inlineCheckbox15" value="option15">
+                                        <label for="inlineCheckbox15">Opiekun
+
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="row third">
+                                    <button class="btn-search" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
                 </div></div> </div></form>
 </div>
-<script src="{{asset('Search/js/extention/choices.js')}}"></script>
-<script>
-    const choices = new Choices('[data-trigger]',
-        {
-            searchEnabled: false,
-            itemSelectText: '',
-        });
 
-</script>
-<script src="{{asset('Search/js/extention/flatpickr.js')}}"></script>
-<script>
-    flatpickr(".datepicker",
-        {
-            dateFormat: "m/d/y"
-        });
-    var btnTypes = document.querySelectorAll('.travel-type-wrap .item')
-    var mainForm = document.getElementById('main-form')
-    for (let i = 0; i < btnTypes.length; i++) {
-        btnTypes[i].addEventListener('click', function () {
-            for (let i = 0; i < btnTypes.length; i++) {
-                btnTypes[i].classList.remove('active')
-            }
-            btnTypes[i].classList.add('active')
-            let className = 'type' + i
-            mainForm.className = `${className} main-form`
-        })
-    }
 
-</script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-</html>
+@endsection

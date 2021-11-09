@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Providers;
-use Illuminate\Support\Facades\View;
+use App\Interfaces\GuardianRepositoryInterface;
+use App\Repositories\GuardianRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,8 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            \App\Interfaces\GuardianRepositoryInterface::class, function () {
-            return new  \App\Repositories\GuardianRepository;
+            GuardianRepositoryInterface::class, function () {
+            return new  GuardianRepository;
         }
         );
 

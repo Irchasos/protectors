@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', [App\Http\Controllers\MainPageController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\MainPageController::class, 'index'])->name('home');
 Route::get('/version', [App\Http\Controllers\MainPageController::class, 'version'])->name('version');
 Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->name('search');
+Route::get('/list', [App\Http\Controllers\SearchController::class, 'list'])->name('list');

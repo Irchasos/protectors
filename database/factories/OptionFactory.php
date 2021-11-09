@@ -2,17 +2,19 @@
 
 namespace Database\Factories;
 
-use App\Models\District;
+use App\Models\Option;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class DistrictFactory extends Factory
-{    protected $model = District::class;
+
+class OptionFactory extends Factory
+{
+    protected $model = Option::class;
 
 
     public function definition()
     {
         return [
-            "name" => 'MOKOTÓW',
+            "name" => $this->faker->name()
         ];
     }
 }
