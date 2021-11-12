@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Interfaces\GuardianRepositoryInterface;
+use App\Models\Guardian;
 
 class SearchController extends Controller
 {
@@ -20,5 +21,11 @@ class SearchController extends Controller
     {
         $allGuardians = $this->GuardianRepository->allGuardians();
         return view('search.list', ['guardians' => $allGuardians]);
+    }
+    public function show(Guardian $guardian)
+    {
+
+
+        return view('search.show', ['guardian' => $guardian]);
     }
 }

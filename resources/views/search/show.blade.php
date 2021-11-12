@@ -20,7 +20,7 @@
     </tr>
     </thead>
     <tbody>
-
+{{dd($guardian)}}
     <tr class="table-primary">
         <td>Primary</td>
         <td>Załozenie projektu, repozytorium,bazy</td>

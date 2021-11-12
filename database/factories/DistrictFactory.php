@@ -12,7 +12,8 @@ class DistrictFactory extends Factory
     public function definition()
     {
         return [
-            "name" => 'MOKOTÓW',
+            array('id' => 1,'name' => 'Dayle'),
+
         ];
     }
 }

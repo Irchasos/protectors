@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
 
     public function run()
     {
-        District::factory(15)->create();
+       // District::factory(15)->create();
         Guardian::factory(100)->create();
-        DistrictGuardian::factory(10)->create();
-        // Option::factory(12)->create();
+       // DistrictGuardian::factory(10)->create();
+
     }
 }

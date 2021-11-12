@@ -7,7 +7,7 @@
     <header id="header" class="hoc clear">
         <div id="logo" class="fl_left">
             <!-- ################################################################################################ -->
-            <h1 class="logoname"><a href="index.html">Chill<span>a</span>id</a></h1>
+            <h1 class="logoname"><a href="/"><span>Best-niania</span></a></h1>
             <!-- ################################################################################################ -->
         </div>
         <nav id="mainav" class="fl_right">

@@ -263,14 +263,14 @@
         </div>
         <ul id="latest" class="nospace group">
             <li class="one_third first">
-                <article><a class="imgover" href="#"><img src="{{asset('images/348x261.png')}}" alt=""></a>
+                <article><a class="imgover" href="#"><img STYLE="height: 261px; width:348px" src="{{asset('images/Gargamel.gif')}}" alt=""></a>
                     <ul class="nospace meta clear">
                         <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
                         <li><i class="fas fa-comments"></i> <a href="#">Comments (3)</a></li>
                     </ul>
                     <div class="excerpt">
                         <time datetime="2045-04-05T08:15+00:00">05 Apr 2045</time>
-                        <p class="heading"><a href="#">Quam justo suscipit at blandit at blandit vitae tellus maecenas</a></p>
+                        <p class="heading"><a href="#">ODEJŚCIE GARGAMELA</a></p>
                     </div>
                 </article>
             </li>

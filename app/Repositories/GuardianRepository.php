@@ -24,5 +24,9 @@ class GuardianRepository implements GuardianRepositoryInterface
     {
         return Guardian::all();
     }
+    final public function Hour_price()
+    {
+        return Guardian::all();
+    }
 
 }
